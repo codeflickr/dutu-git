@@ -1,0 +1,353 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
+dt, dd, ol, ul, li, table, tr, td, form { 
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+html, body{
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    background: url('../images/square-bg.png'); 
+    background-attachment: fixed;
+}
+
+html {
+    font: 81.25% Tahoma, Geneva, sans-serif;
+    background-color: #fff;
+    line-height: 1.4em; 
+    direction: ltr;
+    color: #333;
+}
+
+a, a:link, a:visited { 
+    color: #08aee3; 
+    font-weight: normal; 
+    text-decoration: none; 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.5;
+}
+
+blockquote { 
+    border: 1px solid #ccc; 
+    border-left: 5px solid #000; 
+    padding: 19px; 
+    margin: 20px 0 0 0;
+}
+
+h1, h2, h3, h4, h5, h6{ 
+    color: #333; 
+    font-weight: normal; 
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 20px;  
+    padding: 5px 0; 
+}
+
+h2 { 
+    font-size: 18px; 
+    padding: 5px 0;
+}
+
+h3 { 
+    font-size: 16px; 
+}
+
+h4 { 
+    font-size: 14px; 
+}
+
+h5 { 
+    font-size: 12px; 
+}
+
+h6 { 
+    font-size: 10px; 
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+#template-wrapper {
+    max-width: 945px;
+    min-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+
+#template-header {
+    width: 100%;
+    padding: 20px 0 10px;
+}
+
+#template-header ul {
+    list-style: none;
+}
+
+#template-header ul li{
+    display: inline;
+    padding: .5em;
+    font-size: 16px;
+}
+
+#template-header ul li:hover{
+    background: url('../images/bg-noise-grey.png') ;
+}
+
+#template-header ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+#template-header .no-effect ul li:hover{
+    background: inherit;
+}
+
+#template-header .no-effect ul li a:hover{
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+#site-logo { 
+    float: left; 
+}
+
+#header-right { 
+    position: relative;
+    float: right; 
+    top: 50px;
+}
+
+#header-right a { 
+    color: #777; 
+}
+
+#header-right a:hover{
+    color: #222;
+}
+
+#template-menu {
+    width: 100%;
+    background: url('../images/bg-noise-grey.png') repeat-x;
+}
+
+#template-login { 
+    padding: 0 10px;
+    background: url('../images/bg-noise-grey.png') repeat-x;
+    height: 52px;
+}
+
+#template-login #signin { 
+    float: right;
+    padding-top: .5em;
+    width: 500px;
+}
+
+#template-login #signin #username-error{ 
+    float: left;
+}
+
+#template-login #signin #password-error{ 
+    float: right;
+}
+
+#template-login #signin #password-error, #username-error p{
+    color: #FF4500;
+}
+
+#template-login #signin a:hover{ 
+    text-decoration: none;
+}
+
+#template-login #signin .txt-field {
+    float: left;
+    display: block;
+    margin-right: 5px;
+    height: 24px;
+    width: 200px;
+    line-height: 24px;
+    color: #999;
+    padding: 0 5px;
+    border: 1px solid #666;
+    background: #333;
+}
+
+#template-login #signin .btn{
+    padding: .5px;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #000;
+    height: 26px;
+}
+
+#template-main {
+    width: 100%;
+    background:#f5f5f5;
+    padding-bottom: 1.5em;
+}
+
+#template-main #content {
+    height: auto;
+    width: auto;
+    padding-top: 1.5em;
+}
+
+ #sidebar {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 0 1em;
+}
+
+#sidebar-box {
+    width: auto;
+    height: auto;
+    border-right: 5px #e5e5e5 solid;
+}
+
+.sidebar-box p{
+    margin-bottom: 15px;
+}
+
+#sidebar-box .sidebar-list ul{ 
+    list-style: none; 
+    margin-bottom: .5em;
+}
+
+#sidebar-box .sidebar-list ul li{
+    border-bottom: 1px #e5e5e5 dotted;
+    padding: .8em .5em; 
+    font-size: 14px;
+}
+
+#sidebar-box .sidebar-list ul li:hover {
+    background: #e5e5e5;
+}
+
+#sidebar-box .sidebar-list ul li a { 
+    color: #777; 
+}
+
+#sidebar-box .sidebar-list ul li a:hover { 
+    color: #000; 
+}
+
+#template-main #main-content{
+    float: left;
+    width: 69%;
+    height: 100%;
+    padding-right: .5em;
+    overflow: auto;
+}
+
+#template-main #main-content #filter-form{
+    height: auto;
+    margin-bottom: 1em;
+    background: #fff;
+}
+
+#template-main #main-content #search-results{
+    margin-bottom: 2em;
+}
+
+#template-footer {
+    width: 100%;
+    text-align: center;
+/*    background: url('../images/bg-footer.jpg'); */
+    padding: 10px 0 15px 0;
+}
+
+#template-footer #footer-links ul {
+    font: 18px "Trebuchet MS", sans-serif;
+    list-style: none;
+    margin: .5em 0;
+}
+
+#template-footer #footer-links ul li{
+    display: inline;
+    padding: 0 1.5em 0 0;
+}
+
+#template-footer #footer-links a {
+    color: #333; 
+}
+
+#template-footer #copyright{
+    float: left;
+    margin-left: 20px;
+    font: 18px "Trebuchet MS", sans-serif;
+}
+
+#template-footer #copyright img{
+    position: relative;
+    top: 10px;
+}
+
+#template-footer #copyright a{
+    color: #999;
+}
+
+#template-footer p {
+    padding: 5px 0;
+}
+
+#template-footer #follow-us{
+    float: right;
+    margin-right: 20px;
+}
+
+#template-footer #follow-us ul{
+    list-style: none;
+}
+
+#template-footer #follow-us ul li{
+    display: inline;
+    padding: 0 1em 0 0;
+}
+
+#template-footer #follow-us ul li a img{
+    height: 30px;
+    width: 30px;
+}
+
+.royal-blue{
+    background-color: #4D90FE;
+}
+
+.orange-red{
+    background-color: #FF4500;
+}
+
+.custom-btn {
+    padding: .3em;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+}
